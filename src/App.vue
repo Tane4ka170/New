@@ -1,5 +1,7 @@
 <script setup>
+import { RouterView, RouterLink } from "vue-router";
 import Magnify from "vue-material-design-icons/Magnify.vue";
+import Bell from "vue-material-design-icons/Bell.vue";
 </script>
 
 <template>
@@ -8,7 +10,41 @@ import Magnify from "vue-material-design-icons/Magnify.vue";
     class="fixed right-0 flex items-center justify-between w-[calc(100%-240px)] h-[56px] border-b border-b-[#1781f0]"
   >
     <div class="flex items-center w-full">
-      <Magnify class="pl-6 mt-1 pr-2" fillColor="#fffb08" />
+      <Magnify class="pl-6 mt-1 pr-2" fillColor="#fffb08" :size="22" />
+      <input
+        type="text"
+        class="p-1 bg-transparent outline-none font-[400] placeholder-[#b117f0] text-[#fff] w-full max-w-xl"
+        placeholder="Search"
+      />
+    </div>
+    <div class="flex items-center pr-10">
+      <div class="mr-4 p-1 hover:bg-[#d8f017] rounded-full cursor-pointer">
+        <Bell fillColor="#1781f0" :size="20" />
+      </div>
+
+      <img
+        src="https://img.freepik.com/premium-vector/avatar-icon-circle-male-sign-vector-illustration_276184-170.jpg"
+        alt=""
+        class="rounded-full w-[33px]"
+      />
+    </div>
+  </div>
+
+  <div
+    id="SideNav"
+    class="fixed w-[240px] bg-[#b117f0] h-[100vh] border-r[#1781f0]"
+  >
+    <div class="w-full pl-6 pt-3 cursor-pointer">
+      <RouterLink to="/" class="text-[#d8f017]">MusicApp</RouterLink>
+    </div>
+
+    <div class="mt-[53px]"></div>
+
+    <!-- Menu -->
+    <div class="text-[#77b5f6] font-light text-[12px] pl-[62px] mt-[25px]">
+      <div class="py-[9px] hover:text-[#d8f017] cursor-pointer">
+        Favorite tracks
+      </div>
     </div>
   </div>
 </template>
