@@ -40,11 +40,19 @@ import Bell from "vue-material-design-icons/Bell.vue";
 
     <div class="mt-[53px]"></div>
 
-    <!-- Menu -->
+    //Menu
     <div class="text-[#77b5f6] font-light text-[12px] pl-[62px] mt-[25px]">
       <div class="py-[9px] hover:text-[#d8f017] cursor-pointer">
         Favorite tracks
       </div>
+      <div class="py-[9px] hover:text-[#d8f017] cursor-pointer">Playlist</div>
+      <div class="py-[9px] hover:text-[#d8f017] cursor-pointer">Albums</div>
+      <div class="py-[9px] hover:text-[#d8f017] cursor-pointer">Artists</div>
+      <div class="py-[9px] hover:text-[#d8f017] cursor-pointer">Podcasts</div>
     </div>
   </div>
+
+  <div
+    class="fixed w-[calc(100%-240px)] h-[calc(100-56px)] ml-[240px] mt-[56px] overflow-x-auto"
+  ></div>
 </template>
