@@ -2,6 +2,7 @@
 import { RouterView, RouterLink } from "vue-router";
 import Magnify from "vue-material-design-icons/Magnify.vue";
 import Bell from "vue-material-design-icons/Bell.vue";
+import SideMenuItem from "./components/SideMenuItem.vue";
 </script>
 
 <template>
@@ -40,7 +41,25 @@ import Bell from "vue-material-design-icons/Bell.vue";
 
     <div class="mt-[53px]"></div>
 
-    //Menu
+    <SideMenuItem iconString="music" :iconSize="20" pageUrl="/" name="Music" />
+    <SideMenuItem
+      iconString="podcast"
+      :iconSize="20"
+      pageUrl="/"
+      name="Podcasts"
+    />
+    <SideMenuItem
+      iconString="discover"
+      :iconSize="20"
+      pageUrl="/"
+      name="Explore"
+    />
+    <SideMenuItem
+      iconString="favorite"
+      :iconSize="20"
+      pageUrl="/"
+      name="Favorites"
+    />
     <div class="text-[#77b5f6] font-light text-[12px] pl-[62px] mt-[25px]">
       <div class="py-[9px] hover:text-[#d8f017] cursor-pointer">
         Favorite tracks
@@ -54,5 +73,7 @@ import Bell from "vue-material-design-icons/Bell.vue";
 
   <div
     class="fixed w-[calc(100%-240px)] h-[calc(100-56px)] ml-[240px] mt-[56px] overflow-x-auto"
-  ></div>
+  >
+    <RouterView />
+  </div>
 </template>
