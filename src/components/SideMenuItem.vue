@@ -15,9 +15,9 @@ let icon = ref(null);
 
 watchEffect(() => {
   if (route.path === pageUrl.value) {
-    icon.value = iconString.value + "-fill";
-  } else {
     icon.value = iconString.value + "-black";
+  } else {
+    icon.value = iconString.value + "-fill";
   }
 });
 
