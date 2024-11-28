@@ -42,7 +42,22 @@ let isHover = ref(false);
           >
             <Play :size="30" />
           </div>
-          <img src="" alt="" class="min-h-[54px] min-w-[54px] rounded-sm z-0" />
+          <img
+            :src="image"
+            alt=""
+            class="min-h-[50px] min-w-[50px] rounded-sm z-0"
+          />
+        </div>
+
+        <div class="w-full truncate ml-16">
+          <p
+            class="hover:underline truncate text-lime-200 font-light text-[15px] cursor-pointer"
+          >
+            {{ text }}
+          </p>
+          <p class="text-[#d8f017] truncate text-[12px] max-w-[95%] font-light">
+            by <span class="hover:underline cursor-pointer">{{ by }}</span>
+          </p>
         </div>
       </div>
     </RouterLink>
