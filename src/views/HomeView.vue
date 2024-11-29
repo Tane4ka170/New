@@ -1,5 +1,6 @@
 <script setup>
 import BlendsInfluencedBy from "../components/BlendsInfluencedBy.vue";
+import MultiArtistSelect from "../components/MultiArtistSelect.vue";
 </script>
 
 <template>
@@ -97,9 +98,54 @@ import BlendsInfluencedBy from "../components/BlendsInfluencedBy.vue";
           <MultiArtistSelect
             class="w-1/4"
             category="daily"
-            text="Featuring Twenty One Pilots, Usher and Sopho"
+            text="Featuring Katy Perry, Britney Spears and Drax Project"
             to="/artist"
-            images="{}"
+            :images="{
+              one: 'https://miro.medium.com/v2/resize:fit:681/1*EBOL4lka5QjcYoxj6AHp-g.png',
+              two: 'https://aimm.edu/hubfs/Blog%20Images/Top%2010%20Album%20Covers%20of%202017/Tyler%20the%20Creator-%20Flower%20boy.jpg',
+              three:
+                'https://upload.wikimedia.org/wikipedia/commons/3/33/Are_You_Experienced_-_US_cover-edit.jpg',
+              four: 'https://www.billboard.com/wp-content/uploads/2022/06/beyonce-Lemonade-album-art-billboard-1240.jpg?w=600',
+            }"
+          />
+          <MultiArtistSelect
+            class="w-1/4"
+            category="daily"
+            text="Featuring Hailee Steinfeld, Little Mix and Nicki Minaj"
+            to="/artist"
+            :images="{
+              one: 'https://www.usatoday.com/gcdn/authoring/authoring-images/2024/04/18/USAT/73369584007-013-1989-taylors-version-2023.jpeg',
+              two: 'https://www.skillshare.com/blog/wp-content/uploads/2016/06/ScreenShot2020-10-20at11.36.46AM.png',
+              three:
+                'https://qodeinteractive.com/magazine/wp-content/uploads/2020/06/16-Tame-Impala.jpg',
+              four: 'https://www.sleek-mag.com/wp-content/uploads/2017/05/takashi_murakami_kanye_west.jpg',
+            }"
+          />
+          <MultiArtistSelect
+            class="w-1/4"
+            category="daily"
+            text="Featuring Dana International, Claudia Pascoal and Beyoncé"
+            to="/artist"
+            :images="{
+              one: 'https://pure-music.co.uk/wp-content/uploads/2019/04/Thriller-Album-Cover.png',
+              two: 'https://www.indieground.net/images/blog/2024/indieblog-best-album-covers-2010s-23.jpg',
+              three:
+                'https://images.theconversation.com/files/512871/original/file-20230301-26-ryosag.jpg?ixlib=rb-4.1.0&rect=97%2C79%2C5799%2C5817&q=45&auto=format&w=926&fit=clip',
+              four: 'https://cdn-images.dzcdn.net/images/cover/967ac8605268db88a1e597394115365d/1900x1900-000000-80-0-0.jpg',
+            }"
+          />
+          <MultiArtistSelect
+            class="w-1/4"
+            category="daily"
+            text="Featuring Raiven, Natalia Barbu and One Direction"
+            to="/artist"
+            :images="{
+              one: 'https://www.billboard.com/wp-content/uploads/media/ariana-grande-sweetner-album-art-2018-billboard-1240.jpg?w=600',
+              two: 'https://www.billboard.com/wp-content/uploads/2022/03/48.-Lady-Gaga-%E2%80%98The-Fame-Monster-2009-album-art-billboard-1240.jpg?w=600',
+              three:
+                'https://www.billboard.com/wp-content/uploads/2023/07/rihanna-anti-cover-2016-billboard-1240.jpg?w=600',
+              four: 'https://www.billboard.com/wp-content/uploads/2022/03/35.-Metallica-%E2%80%98Master-of-Puppets-1986-album-art-billboard-1240.jpg?w=600',
+            }"
           />
         </div>
       </div>
