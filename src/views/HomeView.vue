@@ -149,6 +149,50 @@ import MultiArtistSelect from "../components/MultiArtistSelect.vue";
           />
         </div>
       </div>
+
+      <div class="px-8 mt-14 min-w-[800px]">
+        <div class="py-3">
+          <p class="text-center pb-6 text-[#b117f0] text-sm">
+            Unlock Flow by choosing your favorite artists for better
+            recommendations
+          </p>
+
+          <div class="flex justify-center gap-7 full">
+            <div class="flex items-center justify-center relative">
+              <img
+                src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/114/posts/34296/final_image/Final-image.jpg"
+                alt=""
+                class="absolute -left-36 rounded-full z-0 cursor-pointer"
+                width="100"
+              />
+              <img
+                src="https://res.cloudinary.com/zenbusiness/image/upload/v1670445040/logaster/logaster-2021-02-douqir-u4aaozip-1024x1024.jpg"
+                alt=""
+                class="absolute -left-[80px] rounded-full z-10 cursor-pointer"
+                width="100"
+              />
+              <img
+                src="https://www.premadepixels.com/wp-content/uploads/2020/11/Unknown-Album-Cover-PP1.jpg"
+                alt=""
+                class="rounded-full z-20 cursor-pointer"
+                width="100"
+              />
+              <img
+                src="https://www.billboard.com/wp-content/uploads/2022/03/7.-Nirvana-%E2%80%98Nevermind-1991-album-art-billboard-1240.jpg?w=600"
+                alt=""
+                class="absolute -right-[80px] rounded-full z-10 cursor-pointer"
+                width="100"
+              />
+              <img
+                src="https://s.yimg.com/ny/api/res/1.2/TdT5KvjU14pp8TUgwnvMsw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk2MA--/https://media.zenfs.com/en/one37pm_956/72d7b3dc8acef1991bb74d8e90c9ceab"
+                alt=""
+                class="absolute -right-36 rounded-full z-0 cursor-pointer"
+                width="100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
